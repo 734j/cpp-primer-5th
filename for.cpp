@@ -19,7 +19,7 @@ int main (void) {
 	for(int val2 = 10 ; val2 >= 1 ; val2--) {
 		std::cout << val2 << std::endl;
 	}
-
+	
 	std::cout << "Done." << std::endl; // We send text to 'cout' a so called 'ostream'
 	int64_t one = 0;
 	int64_t two = 0;
