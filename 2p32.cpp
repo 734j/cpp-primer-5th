@@ -3,14 +3,15 @@
 
 /*
  *
- * 2.32
+ * exersice 2.32 c++ primer
  *
  *
  */
 
 int main () {
 
-	int null = 0, *p = null;
-	std::cout << null << " " << *p << std::endl;
+	int null1 = 0, *p1 = &null1; // Add a & ?
+	std::cout << null1 << " " << *p1 << std::endl;
+
 	return 0;
 }
