@@ -4,7 +4,7 @@
 
 /*
  *
- * Description
+ * 3.2 v1
  *
  *
  */
@@ -17,6 +17,12 @@ using std::clog;
 using std::endl;
 int main () {
 
-    
+	string line;
+	while(getline(cin, line)) {
+		if(!line.empty()) {
+			cout << line << endl;
+		}
+	}
+	
 	return 0;
 }

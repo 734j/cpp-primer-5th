@@ -4,7 +4,7 @@
 
 /*
  *
- * Description
+ * 3.2 v2
  *
  *
  */
@@ -17,6 +17,10 @@ using std::clog;
 using std::endl;
 int main () {
 
-    
+    string word;
+	while(cin >> word) {
+		cout << word << endl;
+	}
+	
 	return 0;
 }

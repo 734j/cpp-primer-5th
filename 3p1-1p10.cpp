@@ -1,22 +1,23 @@
 #include <iostream>
-#include "sales_data.hpp"
 #include "sales_item.hpp"
 
 /*
  *
- * Description
+ * 3.1, 1.10
  *
  *
  */
 
-using std::string;
 using std::cout;
 using std::cin;
-using std::cerr;
-using std::clog;
 using std::endl;
 int main () {
 
-    
+	int i = 10;
+	while(i >= 0) {
+		cout << i << endl;
+		i--;
+	}
+
 	return 0;
 }

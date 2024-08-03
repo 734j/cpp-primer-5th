@@ -4,7 +4,7 @@
 
 /*
  *
- * Description
+ * 3.3
  *
  *
  */
@@ -17,6 +17,8 @@ using std::clog;
 using std::endl;
 int main () {
 
-    
+	string word;
+	getline(cin, word); // Getline does not care about anything except the newline character. If it sees a newline it stops reading.
+	cout << word << endl;
 	return 0;
 }

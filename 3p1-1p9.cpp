@@ -1,22 +1,25 @@
 #include <iostream>
-#include "sales_data.hpp"
 #include "sales_item.hpp"
 
 /*
  *
- * Description
+ * 3.1, 1.9
  *
  *
  */
 
-using std::string;
 using std::cout;
 using std::cin;
-using std::cerr;
-using std::clog;
 using std::endl;
 int main () {
 
-    
+	int i = 50;
+	int sum = 0;
+	while(i <= 100) {
+		sum += i;
+		i++;
+	}
+
+	cout << sum << endl;
 	return 0;
 }
