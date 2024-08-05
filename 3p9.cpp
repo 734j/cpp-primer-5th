@@ -4,9 +4,9 @@
 
 /*
  *
- * 3.5
+ * 3.9
  *
- *
+ * Program does compile but not sure if valid. It has a size of 0 so its probably undefined behavior.
  */
 
 using std::string;
@@ -17,15 +17,9 @@ using std::clog;
 using std::endl;
 int main () {
 
-	string full;
-	string full_sep;
-	string DD;
-	while(cin >> DD) {
-		full += DD;
-		full_sep += DD + ' ';
-	}
-	cout << full << endl;
-	cout << full_sep << endl;
- 
+	string s;
+	auto Size = s.size();
+	cout << Size << endl;
+	cout << s[0] << endl;
 	return 0;
 }

@@ -4,7 +4,7 @@
 
 /*
  *
- * 3.5
+ * 3.6 v1
  *
  *
  */
@@ -17,15 +17,12 @@ using std::clog;
 using std::endl;
 int main () {
 
-	string full;
-	string full_sep;
-	string DD;
-	while(cin >> DD) {
-		full += DD;
-		full_sep += DD + ' ';
+    string Xer;
+	cout << "Enter a string" << endl;
+	cin >> Xer;
+	for(auto &c : Xer) { // Make reference for every character in Xer
+		c = 'X';
 	}
-	cout << full << endl;
-	cout << full_sep << endl;
- 
+	cout << Xer << endl;
 	return 0;
 }
