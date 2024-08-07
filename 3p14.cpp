@@ -18,7 +18,7 @@ using std::clog;
 using std::endl;
 using std::vector;
 int main () {
-
+	
 	int n;
 	vector<int> vn;
     if(cin >> n) {
@@ -30,7 +30,7 @@ int main () {
 	} else {
 		return -1;
 	}
-
+	
 	for(auto vni : vn) {
 		cout << vni << endl;
 	}
