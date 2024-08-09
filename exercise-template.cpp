@@ -18,7 +18,5 @@ using std::clog;
 using std::endl;
 using std::vector;
 int main () {
-
-    
 	return 0;
 }
