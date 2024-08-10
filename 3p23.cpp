@@ -26,7 +26,8 @@ int main () {
 
 	int random_value = 0;
 	vector<int> ff;
-	decltype(ff.size()) amount = 10;
+	decltype(ff.size()) amount = 0;
+	if(cin >> amount) {} else { return -1; }
 	std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> distr(1, 10000);
