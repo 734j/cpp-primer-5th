@@ -10,13 +10,6 @@
  *
  */
 
-using std::string;
-using std::cout;
-using std::cin;
-using std::cerr;
-using std::clog;
-using std::endl;
-using std::vector;
 int main () {
 	return 0;
 }
