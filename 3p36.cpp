@@ -8,11 +8,7 @@
  *
  * 3.36
  *
- * I found a little bit of strangeness when comparing the vectors with '=='
- * If i input for example 5 1's to the first vector
- * and then i enter maybe 2 1's to the 2nd vector
- * and then afterwards hit CTRL+D, the vector evaluates
- * as equal... Not sure if it's supposed to be like this, they clearly aren't the same...
+ * 
  */
 
 int main () {
