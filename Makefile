@@ -1,7 +1,7 @@
 CC1=clang++
 CC2=g++
-CFLAGS_CLANG=-O0 -Wfatal-errors -Wall -Werror -Wextra -g3 -fsanitize=address,leak,undefined -Wpedantic -Wformat=2 -Wshadow -fno-common -std=c++2b
-CFLAGS_GCC=-O0 -Wfatal-errors -Wall -Werror -Wextra -g3 -fsanitize=address,leak,undefined -Wpedantic -Wformat=2 -Wshadow -fno-common -std=c++2b -Wformat-truncation=2 -Wformat-overflow
+CFLAGS_CLANG=-O0 -Wfatal-errors -Wall -Werror -Wextra -g3 -fsanitize=address,leak,undefined,float-divide-by-zero -Wpedantic -Wformat=2 -Wshadow -fno-common -std=c++2b
+CFLAGS_GCC=-O0 -Wfatal-errors -Wall -Werror -Wextra -g3 -fsanitize=address,leak,undefined,float-divide-by-zero -Wpedantic -Wformat=2 -Wshadow -fno-common -std=c++2b -Wformat-truncation=2 -Wformat-overflow
 BINDIR=bin
 SRCS=$(wildcard *.cpp)
 OBJS_CLANG=$(patsubst %.cpp, $(BINDIR)/clang/%, $(SRCS))
