@@ -20,7 +20,6 @@ int main () {
 	std::cin >> a;
 	double b = 10 / a;
 	std::cout << b << std::endl;
-
 	int c = 10;
 	std::cout << "Input a 0: " << std::endl;
 	std::cin >> c;
