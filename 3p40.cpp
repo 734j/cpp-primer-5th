@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <cstring>
-#include "sales_data.hpp"
-#include "sales_item.hpp"
 
 /*
  *

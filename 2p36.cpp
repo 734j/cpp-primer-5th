@@ -1,5 +1,4 @@
 #include <iostream>
-#include "sales_item.hpp"
 
 /*
  *

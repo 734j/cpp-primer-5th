@@ -3,8 +3,6 @@
 #include <ctime>
 #include <cstdlib>
 #include <random>
-#include "sales_data.hpp"
-#include "sales_item.hpp"
 
 /*
  *

@@ -1,7 +1,5 @@
 #include <iostream>
 #include <vector>
-#include "sales_data.hpp"
-#include "sales_item.hpp"
 #include <cstring>
 #include <string>
 #include <limits>

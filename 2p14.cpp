@@ -1,5 +1,4 @@
 #include <iostream>
-#include "sales_item.hpp"
 
 /*
  * Yes, it is legal if you aren't using compilerflags like me.
