@@ -25,6 +25,7 @@ int main () {
 		for(auto b : a) {
 			std::cout << b << " ";
 		}
+		
 		std::cout << std::endl;
 	}
 
@@ -42,6 +43,7 @@ int main () {
 		for(auto b : a) {
 			std::cout << b << " ";
 		}
+		
 		std::cout << std::endl;
 	}
 	
@@ -50,6 +52,7 @@ int main () {
 		for(auto aa = std::begin(*a) ; aa != std::end(*a) ; ++aa) {
 			std::cout << *aa << " ";
 		}
+		
 		std::cout << std::endl;
 	}
 	
