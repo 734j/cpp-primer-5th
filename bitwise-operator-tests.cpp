@@ -50,6 +50,12 @@ result of Quiz1 AND NOT(1UL << 27):
 00000000 01100000 00010000 11100000
 
 -------------------------------------------------------------------------------------------------------------------------
+
+NOT(~) --- Inverts the operand
+AND(&) --- If both operands contains 1 then it stays 1. Anything else becomes 0.
+OR(|)  --- If one or both of the operands have 1 then it becomes 1. Anything else becomes 0.
+XOR(^) --- Turn to one if one operand has 1. If both have 1, or if both have 0 then turn to 0.
+
 */
 
 void cin_clear() {
