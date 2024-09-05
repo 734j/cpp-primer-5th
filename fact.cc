@@ -2,7 +2,7 @@
 
 /*
  *
- * 6.4
+ *
  *
  *
  */
@@ -17,10 +17,4 @@ uint64_t fact_i(void) {
 	}
 	
 	return ret;
-}
-
-int main () {
-
-	std::cout << fact_i() << std::endl;
-	return 0;
 }

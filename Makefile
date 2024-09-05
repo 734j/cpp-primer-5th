@@ -8,7 +8,7 @@ OBJS_CLANG=$(patsubst %.cpp, $(BINDIR)/clang/%, $(SRCS))
 OBJS_GCC=$(patsubst %.cpp, $(BINDIR)/gcc/%, $(SRCS))
 MAKEFLAGS += -j$(nproc)
 
-all: clang gcc
+all: clang gcc ch6e9
 
 clean:
 	rm -rf $(BINDIR)/gcc/*
@@ -25,5 +25,21 @@ $(BINDIR)/clang/%: %.cpp
 $(BINDIR)/gcc/%: %.cpp
 	@mkdir -p $(BINDIR)/gcc
 	$(CC2) $(CFLAGS_GCC) -o $@ $<
+
+ch6e9: $(BINDIR)/clang/FACT $(BINDIR)/gcc/FACT
+
+$(BINDIR)/clang/FACT: fact.o factMain.o
+	@mkdir -p $(BINDIR)/clang
+	$(CC1) $(CFLAGS_CLANG) factMain.o fact.o -o $(BINDIR)/clang/FACT
+
+$(BINDIR)/gcc/FACT: fact.o factMain.o
+	@mkdir -p $(BINDIR)/gcc
+	$(CC2) $(CFLAGS_GCC) factMain.o fact.o -o $(BINDIR)/gcc/FACT
+
+fact.o: fact.cc
+	$(CC2) $(CFLAGS_GCC) -c fact.cc
+
+factMain.o: factMain.cc
+	$(CC2) $(CFLAGS_GCC) -c factMain.cc
 
 .PHONY: all clean clang gcc
