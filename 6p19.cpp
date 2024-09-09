@@ -24,7 +24,7 @@ int main () {
 	calc(66); // legal
 	
 	(d)
-	sum(vec.begin(), vec.end(), 3.8); // legal
+	sum(vec.begin(), vec.end(), 3.8); // legalx
 	*/
 	return 0;
 }
