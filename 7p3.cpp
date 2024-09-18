@@ -9,7 +9,7 @@
  * what is supposed to be correct. It may be because i misunderstood
  * The exercise back in the 1.24 exercise.
  *
- * I have modified this program now to be more like i think it should be.
+ * I have modified this program now to be more like i think it should be...
  */
 
 int main () {
