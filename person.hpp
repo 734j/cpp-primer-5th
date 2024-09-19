@@ -4,6 +4,9 @@
 #include <vector>
 
 struct Person {
+	Person() = default;
+	Person(const std::string &name): Name(name) {}
+	Person(const std::string &name, const std::string &addr): Name(name), Address(addr) {} 
 	std::string Name;
 	std::string Address;
 	std::string GetAddress() const { return Address; }
