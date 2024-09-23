@@ -2,12 +2,11 @@
 
 /*
  *
- * 7.22
+ * Description
  *
  *
  */
 
 int main () {
-
 	return 0;
 }

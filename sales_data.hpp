@@ -1,25 +1,26 @@
 #ifndef SALES_DATA_H
 #define SALES_DATA_H
 #include <string>
+#include <iostream>
 struct SalesData;
 SalesData add(const SalesData&, const SalesData&);
 std::ostream &print(std::ostream&, const SalesData&);
 std::istream &read(std::istream&, SalesData&);
 struct SalesData {
 	SalesData() = default;
-	SalesData(const std::string &s): BookNo(s) { }
-	SalesData(const std::string &s, unsigned n, double p):
+	SalesData(const std::string &s): BookNo(s) { } //constructor, bookNo only
+	SalesData(const std::string &s, unsigned n, double p): // constructor, both bookno, UnitsSold and Revenue
 		BookNo(s), UnitsSold(n), Revenue(p*n) { }
-	SalesData(std::istream &sdcin) { read(sdcin, *this); };
-	std::string isbn() const { return BookNo; }
-	SalesData &combine(const SalesData&);
-	double avg_price() const;
-	std::string BookNo;
-	unsigned int UnitsSold = 0;
-	double Revenue = 0.0;
+	SalesData(std::istream &sdcin) { read(sdcin, *this); }; // Constructor, but read from istream
+	std::string isbn() const { return BookNo; } // member function
+	SalesData &combine(const SalesData&); // member function, defined elsewhere
+	inline double avg_price() const; // member function, defined elsewhere
+	std::string BookNo; // data member
+	unsigned int UnitsSold = 0; // data member
+	double Revenue = 0.0; // data member
 };
 
-double SalesData::avg_price() const {
+inline double SalesData::avg_price() const {
 
 	if (UnitsSold)
 		return Revenue / UnitsSold;
@@ -34,7 +35,7 @@ SalesData& SalesData::combine(const SalesData &rhs) {
 	return *this;
 }
 
-std::istream &read(std::istream &is, SalesData &item) {
+std::istream &read(std::istream &is, SalesData &item) { // Not member function
 
 	double price = 0;
 	is >> item.BookNo >> item.UnitsSold >> price;
@@ -42,14 +43,14 @@ std::istream &read(std::istream &is, SalesData &item) {
 	return is;
 }
 
-std::ostream &print(std::ostream &os, const SalesData &item) {
-	
+std::ostream &print(std::ostream &os, const SalesData &item) { // Not member function
+
 	os << item.isbn() << " " << item.UnitsSold << " "
 	   << item.Revenue << " " << item.avg_price();
 	return os;
 }
 
-SalesData add(const SalesData sd1, const SalesData sd2) {
+SalesData add(const SalesData sd1, const SalesData sd2) { // Not member function
 
 	SalesData sdsum = sd1;
 	sdsum.combine(sd2);
