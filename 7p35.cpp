@@ -1,12 +1,10 @@
 #include <iostream>
-
 /*
  *
  * 7.35
  *
  *
  */
-
 typedef std::string Type;
 Type initVal();
 class Exercise {
@@ -17,16 +15,13 @@ public:
 private:
 	int val;
 };
-
 Exercise::Type Exercise::setVal(Exercise::Type parm) {
 	val = parm + initVal(); // double initVal() is used
 	return val; // Return val as double?
 }
-
 Exercise::Type Exercise::initVal() {
 	return 0;
 }
-
 int main () {
 	return 0;
 }
