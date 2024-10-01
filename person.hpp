@@ -2,10 +2,11 @@
 #define PERSON_H
 #include <string>
 #include <vector>
+#include <iostream>
 
 struct Person {
 	Person() = default;
-	Person(const std::string &name): Name(name) {}
+	explicit Person(const std::string &name): Name(name) {}
 	Person(const std::string &name, const std::string &addr): Name(name), Address(addr) {} 
 	std::string Name;
 	std::string Address;
