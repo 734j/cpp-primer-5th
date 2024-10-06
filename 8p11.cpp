@@ -32,9 +32,9 @@ int main () {
 		people.push_back(info);
 	}
 
-	for(auto &a : people) {
+	for(const auto &a : people) {
 		std::cout << a.name << "\n";
-		for(auto &b : a.phones) {
+		for(const auto &b : a.phones) {
 			std::cout << b << "\n";
 		}
 	}
