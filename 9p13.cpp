@@ -24,6 +24,6 @@ int main () {
 		std::cout << a << " ";
 	}
 	
-	std::cout << std::endl;
+	std::cout << std::endl;	
 	return 0; 
 }
