@@ -17,8 +17,7 @@ int main () {
 	
 	auto bbeg = flst.before_begin();
 	auto beg = flst.begin();
-	auto end = flst.cend();
-	while(beg != end) {
+	while(beg != flst.cend()) {
 		if(*beg % 2 == 1) {
 			beg = flst.erase_after(bbeg);
 		} else {
