@@ -23,7 +23,7 @@ int main () {
 	while (std::cin >> word) {
 		svec.push_back(word);
 	}
-
+	
 	svec.resize(svec.size()+svec.size()/2);
 	std::cout << svec.capacity() << std::endl;
 	return 0;
