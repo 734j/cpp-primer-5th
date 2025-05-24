@@ -60,11 +60,13 @@ private:
 		// 1/1/1900
 		int count{0};
 		std::string::size_type pos{0};
-		while(count < 2) {
+		while(1) { // Bug: If the date is wrong, then it loops forever
 			if((pos = date.find_first_of('/', pos)) != std::string::npos) {
 				++count;
 				++pos;
 			}
+
+			
 		}
 
 		if(count == 2) {
